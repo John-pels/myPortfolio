@@ -1,12 +1,14 @@
 import React from "react";
 import TocSharpIcon from "@material-ui/icons/TocSharp";
+import Particles from "react-particles-js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
   faTwitter,
   faMediumM,
   faLinkedinIn,
-  faInstagram
+  faInstagram,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { TemporaryDrawer } from "../Drawer";
 import Typical from "react-typical";
@@ -14,6 +16,31 @@ import "./header.styles.scss";
 
 const Header = () => (
   <header>
+    <Particles
+      params={{
+        particles: {
+          number: {
+            value: 60
+          },
+          size: {
+            value: 3
+          }
+        },
+        interactivity: {
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse"
+            }
+          }
+        }
+      }}
+      style={{
+        position: "absolute",
+        width: "100%",
+        height: "100vh"
+      }}
+    />
     <div className="container">
       <nav className="nav">
         <div className="nav__items brand">
@@ -22,9 +49,10 @@ const Header = () => (
         <div className="nav__items list">
           <ul>
             <li>About</li>
-            <li>Portfolio</li>
             <li>Blog</li>
             <li>Contact</li>
+            <li>Portfolio</li>
+            <li>Resume</li>
             <TemporaryDrawer openRight={<TocSharpIcon className="icon" />} />
           </ul>
         </div>
@@ -34,10 +62,7 @@ const Header = () => (
           <div className="col-lg-8 col-md-12 col-sm-12 text-center p-5">
             <div className="social-media">
               <div className="handles">
-                <FontAwesomeIcon icon={faInstagram} size="lg" />
-              </div>
-              <div className="handles">
-                <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
+                <FontAwesomeIcon icon={faGithub} size="lg" />
               </div>
               <div className="handles">
                 <FontAwesomeIcon icon={faTwitter} size="lg" />
@@ -45,6 +70,13 @@ const Header = () => (
               <div className="handles">
                 <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
               </div>
+              <div className="handles">
+                <FontAwesomeIcon icon={faInstagram} size="lg" />
+              </div>
+              <div className="handles">
+                <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
+              </div>
+
               <div className="handles">
                 <FontAwesomeIcon icon={faMediumM} size="lg" />
               </div>
@@ -65,13 +97,13 @@ const Header = () => (
             <div className="buttons">
               <button className="btn-work">My Work</button>
 
-              <button className="btn-hire">Hire Me!</button>
+              <button className="btn-hire">Hire Me</button>
             </div>
           </div>
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="my-image">
               <img
-                src="https://res.cloudinary.com/john-pels/image/upload/v1583317593/My_image-removebg-preview.png"
+                src="https://res.cloudinary.com/john-pels/image/upload/v1583354722/My_image.jpg"
                 alt="Ajeigbe John Oluwaseyi"
                 className="img-responsive"
               />
