@@ -13,7 +13,7 @@
 
 header {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   color: #fff;
   flex-flow: column wrap;
   background-color: #090833;
@@ -32,7 +32,7 @@ header {
     }
 
     .brand {
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 600;
       cursor: pointer;
 
@@ -41,8 +41,8 @@ header {
       }
 
       @media (max-width: 840px) {
-        font-size: 2em;
-        margin-top: 0.4em;
+        font-size: 1.2em;
+        margin-top: 0.8em;
       }
     }
 
@@ -64,8 +64,8 @@ header {
           position: absolute;
           top: 0;
           right: 0;
-          width: 3em;
-          height: 3em;
+          width: 2.5em;
+          height: 2.5em;
         }
       }
     }
@@ -80,6 +80,10 @@ header {
       margin-bottom: 2em;
       color: #fff;
       cursor: pointer;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
 
     .typical {
@@ -231,8 +235,8 @@ header {
         content: "";
         z-index: -2;
         // background-color: red;
-        left: 7em;
-        top: 2em;
+        left: 6em;
+        top: 1.5em;
         border: 1px solid #fff;
       }
 
