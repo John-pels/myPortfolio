@@ -20,7 +20,7 @@ const Header = () => (
       params={{
         particles: {
           number: {
-            value: 60
+            value: 40
           },
           size: {
             value: 3
@@ -62,7 +62,7 @@ const Header = () => (
         <div className="row">
           <div className="col-lg-8 col-md-12 col-sm-12 text-center p-5">
             <div className="social-media">
-              <div className="handles">
+              <div className="handles github">
                 <a
                   href="https://github.com/John-pels"
                   target="_blank"
@@ -71,7 +71,7 @@ const Header = () => (
                   <FontAwesomeIcon icon={faGithub} size="lg" />
                 </a>
               </div>
-              <div className="handles">
+              <div className="handles twitter">
                 <a
                   href="https://twitter.com/john_pels"
                   target="_blank"
@@ -80,7 +80,7 @@ const Header = () => (
                   <FontAwesomeIcon icon={faTwitter} size="lg" />
                 </a>
               </div>
-              <div className="handles">
+              <div className="handles linkedin">
                 <a
                   href="https://linkedin.com/in/ajeigbejohn"
                   target="_blank"
@@ -89,7 +89,7 @@ const Header = () => (
                   <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
                 </a>
               </div>
-              <div className="handles">
+              <div className="handles instagram">
                 <a
                   href="https://www.instagram.com/john_pels/"
                   target="_blank"
@@ -98,7 +98,7 @@ const Header = () => (
                   <FontAwesomeIcon icon={faInstagram} size="lg" />
                 </a>
               </div>
-              <div className="handles">
+              <div className="handles facebook">
                 <a
                   href="https://facebook.com/ajeigbeoluseyi"
                   target="_blank"
@@ -108,7 +108,7 @@ const Header = () => (
                 </a>
               </div>
 
-              <div className="handles">
+              <div className="handles medium">
                 <a
                   href="https://medium.com/@john_pels"
                   target="_blank"
@@ -120,7 +120,14 @@ const Header = () => (
             </div>
             <div className="typical">
               <Typical
-                steps={["Hi,", 1500, "I am a Frontend Engineer.", 1500]}
+                steps={[
+                  "Hi,",
+                  1500,
+                  "I'm John",
+                  1500,
+                  "I am a Frontend Engineer.",
+                  1500
+                ]}
                 loop={Infinity}
                 wrapper="p"
               />
