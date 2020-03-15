@@ -63,7 +63,7 @@ const Header = () => (
             <div className="social-media">
               <div className="handles email">
                 <a
-                  href="https://github.com/John-pels"
+                  href="mailto:oluseyiajeigbe@yahoo.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
