@@ -356,8 +356,9 @@
       padding: 2em 0;
 
 
-      @media (max-width:767px) {
+      @media (max-width:840px) {
         flex-flow: column wrap;
+        align-items: center;
       }
 
       .contact__icon {
@@ -382,7 +383,7 @@
           height: .2em;
           top: .8em;
 
-          @media (max-width:767px) {
+          @media (max-width:840px) {
             content: '';
             position: absolute;
             background: #090833;
@@ -402,7 +403,8 @@
         color: #090833;
         box-shadow: 0px 0px 1px 0px lighten(#090833, 5%);
 
-        @media (max-width:767px) {
+        @media (max-width:840px) {
+          display: flex;
           margin-top: 1em;
         }
       }

@@ -13,6 +13,7 @@ import {
 import { TemporaryDrawer } from "../Drawer";
 import Typical from "react-typical";
 import "./header.styles.scss";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => (
   <header>
@@ -60,6 +61,15 @@ const Header = () => (
         <div className="row">
           <div className="col-lg-8 col-md-12 col-sm-12 text-center p-5">
             <div className="social-media">
+              <div className="handles email">
+                <a
+                  href="https://github.com/John-pels"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                </a>
+              </div>
               <div className="handles github">
                 <a
                   href="https://github.com/John-pels"

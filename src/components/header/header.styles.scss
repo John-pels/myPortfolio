@@ -108,6 +108,18 @@ header {
           }
         }
 
+
+      }
+
+      .email {
+        a {
+          transition: all .5s ease-in-out;
+
+          &:hover {
+            color: rgb(6, 52, 99);
+          }
+        }
+
       }
 
       .linkedin {
