@@ -8,7 +8,10 @@ import {
   faPeopleCarry,
   faUserAlt,
   faPencilAlt,
-  faArrowRight
+  faArrowRight,
+  faEnvelope,
+  faPhoneAlt,
+  faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.styles.scss";
 
@@ -146,16 +149,19 @@ const Homepage = () => {
                   type="text"
                   placeholder="Full Name"
                   className="form-input"
+                  required
                 />
                 <input
                   type="email"
                   placeholder="Email Address"
                   className="form-input"
+                  required
                 />
                 <input
                   type="text"
                   placeholder="Subject"
                   className="form-input"
+                  required
                 />
                 <textarea
                   cols="5"
@@ -169,10 +175,28 @@ const Homepage = () => {
               </form>
             </div>
             <div className="col-lg-5 col-sm-12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              corporis nemo aut aliquam totam aperiam blanditiis ullam molestiae
-              veritatis illo quo ipsum commodi vitae placeat, enim sint possimus
-              molestias consequuntur!
+              <div className="contact-details">
+                <div className="contact__icon">
+                  <FontAwesomeIcon icon={faEnvelope} className="mt-2" />
+                </div>
+                <div className="contact__texts">oluseyiajeigbe@yahoo.com</div>
+              </div>
+              <div className="contact-details">
+                <div className="contact__icon">
+                  <FontAwesomeIcon icon={faPhoneAlt} className="mt-2" />
+                </div>
+                <div className="contact__texts">
+                  +2348188974303, +2348132815396
+                </div>
+              </div>
+              <div className="contact-details">
+                <div className="contact__icon">
+                  <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-2" />
+                </div>
+                <div className="contact__texts">
+                  Ibadan, Oyo state, Nigeria.
+                </div>
+              </div>
             </div>
           </div>
         </div>

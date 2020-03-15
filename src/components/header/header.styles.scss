@@ -33,13 +33,9 @@ header {
     }
 
     .brand {
-      font-size: 1.3em;
+      font-size: 1.5em;
       font-weight: 600;
       cursor: pointer;
-
-      span {
-        color: cyan;
-      }
 
       @media (max-width: 840px) {
         font-size: 1.2em;
