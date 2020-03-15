@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ControlledCarousel } from "../../components/carousel";
 import {
   faDesktop,
   faCode,
@@ -136,6 +137,12 @@ const Homepage = () => {
               </section>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="testimonial">
+        <div className="container">
+          <ControlledCarousel />
         </div>
       </section>
       <section className="contact-me">
