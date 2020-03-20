@@ -62,6 +62,26 @@ const Header = () => (
       <section className="brief-me">
         <div className="row">
           <div className="col-lg-8 col-md-12 col-sm-12 text-center p-5">
+            <p className="my-name">Hi, I'm John!</p>
+            <div className="typical">
+              <Typical
+                steps={[
+                  "Mobile Web Specialist,",
+                  3000,
+                  "Frontend Engineer",
+                  3000,
+                  "Computer Scientist",
+                  3000
+                ]}
+                loop={Infinity}
+                wrapper="p"
+              />
+            </div>
+            <div className="buttons mb-4">
+              <button className="btn-work">My Work</button>
+
+              <button className="btn-hire">Hire Me</button>
+            </div>
             <div className="social-media">
               <div className="handles email">
                 <a
@@ -127,27 +147,6 @@ const Header = () => (
                   <FontAwesomeIcon icon={faMediumM} size="lg" />
                 </a>
               </div>
-            </div>
-            <p className="my-name">Hi, I'm John!</p>
-            <div className="typical">
-              <Typical
-                steps={[
-                  "Mobile Web Specialist,",
-                  3000,
-                  "Frontend Engineer",
-                  3000,
-                  "Computer Scientist",
-                  3000
-                ]}
-                loop={Infinity}
-                wrapper="p"
-              />
-            </div>
-
-            <div className="buttons">
-              <button className="btn-work">My Work</button>
-
-              <button className="btn-hire">Hire Me</button>
             </div>
           </div>
           <div className="col-lg-4 col-md-12 col-sm-12">

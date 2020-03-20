@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../../components/header";
 import Slide from "react-reveal/Slide";
-import Jello from "react-reveal/Jello";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { CarouselSlider } from "../../components/carousel";
 import {
@@ -75,7 +74,7 @@ const Homepage = () => {
         <div className="container">
           <h1 className="portfolio-h1  ">What I can Do</h1>
           <div className="border-b "></div>
-          <Jello>
+          <Slide left>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <section className="what-i-do">
@@ -114,6 +113,8 @@ const Homepage = () => {
                 </section>
               </div>
             </div>
+          </Slide>
+          <Slide right>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <section className="what-i-do">
@@ -152,7 +153,7 @@ const Homepage = () => {
                 </section>
               </div>
             </div>
-          </Jello>
+          </Slide>
         </div>
       </section>
 
