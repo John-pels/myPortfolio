@@ -42,15 +42,23 @@ const Homepage = () => {
                 <div className="border-b"></div>
                 <Slide right>
                   <p className="about-me-p pt-4">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
-                    ipsa voluptatibus natus ipsum deleniti exercitationem aut
-                    asperiores, soluta incidunt nesciunt? Vitae deleniti
-                    assumenda voluptatibus libero vel aliquid dolorum ratione
-                    eveniet?
+                    Hello, I'm Ajeigbe John Oluseyi, I am a Frontend Engineer
+                    based in Ibadan, Nigeria. I currently work as a freelancer
+                    where I build awesome products for client, I previously
+                    worked with an amazing team of developers at{" "}
+                    <a
+                      href="https://devcareer.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      DevCareer
+                    </a>{" "}
+                    and Platr.
                   </p>
                   <p className="about-me-p">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
-                    ipsa voluptatibus natus ipsum deleniti exercitationem aut
+                    I volunteer for tech events, and participate in Hackathons.
+                    I spend my liesure reading, researching and writing articles
+                    for the public.
                   </p>
                   <div className="about-buttons">
                     <button className="about-btn-work">Blog</button>
