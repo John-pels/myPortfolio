@@ -96,6 +96,7 @@ header {
     .my-name {
       font-size: 3em;
       font-weight: 600;
+      margin-bottom: -.1em;
 
       @media (max-width: 840px) {
         font-size: 2em;
