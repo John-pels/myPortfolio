@@ -93,6 +93,15 @@ header {
   .brief-me {
     margin-top: 3em;
 
+    .my-name {
+      font-size: 3em;
+      font-weight: 600;
+
+      @media (max-width: 840px) {
+        font-size: 2em;
+      }
+    }
+
     .social-media {
       display: flex;
       justify-content: space-evenly;
@@ -189,12 +198,14 @@ header {
       }
     }
 
+
+
     .typical {
-      font-size: 2.5em;
+      font-size: 2em;
       font-weight: 600;
 
       @media (max-width: 840px) {
-        font-size: 1.5em;
+        font-size: 1.3em;
       }
     }
 

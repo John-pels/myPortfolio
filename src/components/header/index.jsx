@@ -1,5 +1,7 @@
 import React from "react";
 import TocSharpIcon from "@material-ui/icons/TocSharp";
+import Zoom from "react-reveal/Zoom";
+
 import Particles from "react-particles-js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -126,26 +128,22 @@ const Header = () => (
                 </a>
               </div>
             </div>
+            <p className="my-name">Hi, I'm John!</p>
             <div className="typical">
               <Typical
                 steps={[
-                  "Hi,",
-                  1500,
-                  "I'm John",
-                  1500,
-                  "I am a Frontend Engineer.",
-                  1500
+                  "Mobile Web Specialist,",
+                  3000,
+                  "Frontend Engineer",
+                  3000,
+                  "Computer Scientist",
+                  3000
                 ]}
                 loop={Infinity}
                 wrapper="p"
               />
             </div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id sint
-              neque harum suscipit, iste possimus repellat amet odio error ipsa
-              a odit nostrum placeat dolor sequi dolorem? At, doloremque
-              mollitia?
-            </p>
+
             <div className="buttons">
               <button className="btn-work">My Work</button>
 
@@ -154,11 +152,13 @@ const Header = () => (
           </div>
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="my-image">
-              <img
-                src="https://res.cloudinary.com/john-pels/image/upload/v1583354722/My_image.jpg"
-                alt="Ajeigbe John Oluwaseyi"
-                className="img-responsive"
-              />
+              <Zoom left>
+                <img
+                  src="https://res.cloudinary.com/john-pels/image/upload/v1583354722/My_image.jpg"
+                  alt="Ajeigbe John Oluwaseyi"
+                  className="img-responsive"
+                />
+              </Zoom>
             </div>
           </div>
         </div>
