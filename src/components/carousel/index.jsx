@@ -2,7 +2,6 @@ import React from "react";
 import makeCarousel from "react-reveal/makeCarousel";
 import Slide from "react-reveal/Slide";
 import styled, { css } from "styled-components";
-// import { render } from "node-sass";
 
 const width = "100%",
   height = "150px";

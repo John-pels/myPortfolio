@@ -1,7 +1,5 @@
 import React from "react";
 import TocSharpIcon from "@material-ui/icons/TocSharp";
-import Zoom from "react-reveal/Zoom";
-
 import Particles from "react-particles-js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -156,13 +154,11 @@ const Header = () => (
           </div>
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="my-image">
-              <Zoom left>
-                <img
-                  src="https://res.cloudinary.com/john-pels/image/upload/v1583354722/My_image.jpg"
-                  alt="Ajeigbe John Oluwaseyi"
-                  className="img-responsive"
-                />
-              </Zoom>
+              <img
+                src="https://res.cloudinary.com/john-pels/image/upload/v1583354722/My_image.jpg"
+                alt="Ajeigbe John Oluwaseyi"
+                className="img-responsive"
+              />
             </div>
           </div>
         </div>
