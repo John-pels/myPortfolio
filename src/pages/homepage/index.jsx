@@ -3,6 +3,7 @@ import Header from "../../components/header";
 import Slide from "react-reveal/Slide";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CarouselSlider } from "../../components/carousel";
+import Pdf from "../../components/resume.pdf";
 import {
   faDesktop,
   faCode,
@@ -26,6 +27,7 @@ const Homepage = () => {
         contact={"contact"}
         portfolio={"portfolio"}
         testimonial={"testimonial"}
+        project={"project"}
       />
       <section className="about mt-5 mb-5">
         <div className="container">
@@ -68,7 +70,11 @@ const Homepage = () => {
                   <div className="about-buttons">
                     <button className="about-btn-work">Blog</button>
 
-                    <button className="about-btn-download">Download CV</button>
+                    <button className="about-btn-download">
+                      <a href={Pdf} target="_blank" rel="noopener noreferrer">
+                        Download CV
+                      </a>
+                    </button>
                   </div>
                 </Slide>
               </section>
@@ -163,8 +169,28 @@ const Homepage = () => {
         </div>
       </section>
 
+      <section className="projects" id="project">
+        <div className="container">
+          <h4 className="project-h5">Projects</h4>
+          <div className="border-b "></div>
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="project-col"></div>
+            </div>
+            <div className="col-lg-4">
+              <div className="project-col"></div>
+            </div>
+            <div className="col-lg-4">
+              <div className="project-col"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="testimonial " id="testimonial">
         <div className="container">
+          <h4 className="testimonial-h5">Testimonial</h4>
+          <div className="border-b "></div>
           <CarouselSlider />
         </div>
       </section>

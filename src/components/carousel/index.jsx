@@ -138,18 +138,17 @@ export const CarouselSlider = () => {
         <TestimonialCard>
           <TestifierImg>
             <img
-              src="https://res.cloudinary.com/john-pels/image/upload/v1566911465/devlogo2.png"
+              src="https://res.cloudinary.com/john-pels/image/upload/v1584841981/Babe.jpg"
               alt="testimonial"
-              style={{ width: "5em", height: "3em" }}
+              style={{ width: "5em", height: "5em", borderRadius: "50%" }}
             />
           </TestifierImg>
-          <TestifierName>Akintunde Sultan</TestifierName>
+          <TestifierName>Oyekanmi Tofunmi</TestifierName>
           <TestifierMsg>
-            John is a very fast leaner, he has achieved in few months what
-            others would in 2 years. His consistency is amazing and how we was
-            able to keep growing his skill while still being a part of a
-            startup’s core team is wonderful. He’s great with leading and
-            awesome with collaborating.
+            Believe me! Mr John is that excellent software developer you have
+            been looking to get on your team but it only takes you hiring him
+            for that project/job for you to know how blessed you are for a such
+            a rare gift as him.
           </TestifierMsg>
         </TestimonialCard>
       </Slide>
@@ -162,7 +161,7 @@ export const CarouselSlider = () => {
               style={{ width: "5em", height: "3em" }}
             />
           </TestifierImg>
-          <TestifierName>Akintunde Sultan</TestifierName>
+          <TestifierName>Olajide Joshua</TestifierName>
           <TestifierMsg>
             John is a very fast leaner, he has achieved in few months what
             others would in 2 years. His consistency is amazing and how we was

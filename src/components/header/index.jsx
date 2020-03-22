@@ -17,7 +17,7 @@ import Typical from "react-typical";
 import "./header.styles.scss";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const Header = ({ about, blog, contact, portfolio, testimonial }) => (
+const Header = ({ about, blog, contact, portfolio, testimonial, project }) => (
   <header>
     <Particles
       params={{
@@ -98,9 +98,18 @@ const Header = ({ about, blog, contact, portfolio, testimonial }) => (
               />
             </div>
             <div className="buttons mb-5">
-              <button className="btn-work">My Work</button>
+              <button className="btn-work">
+                <a href={`#${project}`} rel="noopener noreferrer">
+                  My Work
+                </a>
+              </button>
 
-              <button className="btn-hire">Hire Me</button>
+              <button className="btn-hire">
+                <a href={`#${contact}`} rel="noopener noreferrer">
+                  {" "}
+                  Hire Me
+                </a>
+              </button>
             </div>
             <div className="social-media">
               <div className="handles email">
