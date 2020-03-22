@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/header";
 import Slide from "react-reveal/Slide";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { CarouselSlider } from "../../components/carousel";
+import { CarouselSlider } from "../../components/carousel";
 import {
   faDesktop,
   faCode,
@@ -20,7 +20,13 @@ import "./index.styles.scss";
 const Homepage = () => {
   return (
     <main className="homepage">
-      <Header />
+      <Header
+        about={"about"}
+        blog={"blog"}
+        contact={"contact"}
+        portfolio={"portfolio"}
+        testimonial={"testimonial"}
+      />
       <section className="about mt-5 mb-5">
         <div className="container">
           <div className="row">
@@ -36,7 +42,7 @@ const Homepage = () => {
               </section>
             </div>
             <div className="col-lg-6 col-sm-12">
-              <section className="about-me-context">
+              <section className="about-me-context" id="about">
                 <h6 className="about-me-h6 ">About Me</h6>
                 <div className="border-b"></div>
                 <Slide right>
@@ -70,7 +76,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="portfolio pt-5">
+      <section className="portfolio pt-5" id="portfolio">
         <div className="container">
           <h1 className="portfolio-h1  ">What I can Do</h1>
           <div className="border-b "></div>
@@ -157,12 +163,13 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* <section className="testimonial">
+      <section className="testimonial " id="testimonial">
         <div className="container">
           <CarouselSlider />
         </div>
-      </section> */}
-      <section className="contact-me">
+      </section>
+
+      <section className="contact-me" id="contact">
         <div className="container">
           <h1 className="contact-h1">Get In Touch</h1>
           <div className="border-b"></div>

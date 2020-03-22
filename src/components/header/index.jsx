@@ -17,7 +17,7 @@ import Typical from "react-typical";
 import "./header.styles.scss";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => (
+const Header = ({ about, blog, contact, portfolio, testimonial }) => (
   <header>
     <Particles
       params={{
@@ -49,11 +49,31 @@ const Header = () => (
         <div className="nav__items brand">John</div>
         <div className="nav__items list">
           <ul>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
-            <li>Portfolio</li>
-            <li>Resume</li>
+            <li>
+              <a href={`#${about}`} rel="noopener noreferrer">
+                About
+              </a>
+            </li>
+            <li>
+              <a href={`#${blog}`} rel="noopener noreferrer">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href={`#${contact}`} rel="noopener noreferrer">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href={`#${portfolio}`} rel="noopener noreferrer">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href={`#${testimonial}`} rel="noopener noreferrer">
+                Testimonial
+              </a>
+            </li>
 
             <TemporaryDrawer openRight={<TocSharpIcon className="icon" />} />
           </ul>
@@ -63,7 +83,7 @@ const Header = () => (
         <div className="row">
           <div className="col-lg-8 col-md-12 col-sm-12 text-center p-5">
             <p className="my-name">Hi, I'm John!</p>
-            <div className="typical">
+            <div className="typical mb-4">
               <Typical
                 steps={[
                   "Mobile Web Specialist,",
@@ -77,7 +97,7 @@ const Header = () => (
                 wrapper="p"
               />
             </div>
-            <div className="buttons mb-4">
+            <div className="buttons mb-5">
               <button className="btn-work">My Work</button>
 
               <button className="btn-hire">Hire Me</button>

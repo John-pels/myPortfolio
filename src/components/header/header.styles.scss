@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,800i|Oleo+Script:700&display=swap");
 
-
 * {
   font-family: Comfortaa;
   box-sizing: border-box;
@@ -40,7 +39,7 @@ header {
       color: rgb(35, 219, 219);
       font-weight: 600;
       cursor: pointer;
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
 
       &:hover {
         color: darken(rgb(35, 219, 219), 20%);
@@ -56,8 +55,6 @@ header {
       margin-top: 1.2em;
       color: rgb(35, 219, 219);
 
-
-
       ul {
         display: flex;
         justify-content: space-around;
@@ -66,10 +63,16 @@ header {
       }
 
       li {
-        transition: all .5s ease-in-out;
 
-        &:hover {
-          color: darken(rgb(35, 219, 219), 20%);
+
+        a {
+          color: rgb(35, 219, 219);
+          text-decoration: none;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            color: darken(rgb(35, 219, 219), 20%);
+          }
         }
       }
 
@@ -81,7 +84,7 @@ header {
         @media (max-width: 840px) {
           display: block;
           position: absolute;
-          top: -.5em;
+          top: -0.5em;
           right: 0;
           width: 2.5em;
           height: 2.5em;
@@ -96,7 +99,6 @@ header {
     .my-name {
       font-size: 3em;
       font-weight: 600;
-      margin-bottom: -.1em;
 
       @media (max-width: 840px) {
         font-size: 2em;
@@ -122,88 +124,77 @@ header {
 
       .twitter {
         a {
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 
           &:hover {
-            color: #2591DB;
+            color: #2591db;
           }
         }
-
       }
 
       .github {
         a {
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 
           &:hover {
-            color: #24292E;
+            color: #24292e;
           }
         }
-
-
       }
 
       .email {
         a {
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 
           &:hover {
             color: rgb(6, 52, 99);
           }
         }
-
       }
 
       .linkedin {
         a {
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 
           &:hover {
-            color: #1D77B5;
+            color: #1d77b5;
           }
         }
-
       }
 
       .instagram {
         a {
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 
           &:hover {
-            color: #AD499D;
+            color: #ad499d;
           }
         }
-
       }
 
       .facebook {
         a {
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 
           &:hover {
-            color: #4267B2;
+            color: #4267b2;
           }
         }
-
       }
 
       .medium {
         a {
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 
           &:hover {
             color: #292929;
           }
         }
-
       }
     }
 
-
-
     .typical {
       font-size: 1.8em;
-
 
       @media (max-width: 840px) {
         font-size: 1.3em;
@@ -224,7 +215,7 @@ header {
         border: none;
         height: 40px;
         line-height: 40px;
-        font-size: .9em;
+        font-size: 0.9em;
         font-weight: 600;
         color: #fff;
         cursor: pointer;
@@ -286,7 +277,7 @@ header {
         border: none;
         height: 40px;
         line-height: 40px;
-        font-size: .9em;
+        font-size: 0.9em;
         font-weight: 600;
         color: #fff;
         cursor: pointer;
