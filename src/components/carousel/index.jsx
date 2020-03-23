@@ -138,9 +138,9 @@ export const CarouselSlider = () => {
         <TestimonialCard>
           <TestifierImg>
             <img
-              src="https://res.cloudinary.com/john-pels/image/upload/v1584841981/Babe.jpg"
+              src="https://res.cloudinary.com/john-pels/image/upload/v1584945486/darling.jpg"
               alt="testimonial"
-              style={{ width: "5em", height: "5em", borderRadius: "50%" }}
+              style={{ width: "4em", height: "4em", borderRadius: "50%" }}
             />
           </TestifierImg>
           <TestifierName>Oyekanmi Tofunmi</TestifierName>
