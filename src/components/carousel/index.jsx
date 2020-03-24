@@ -4,7 +4,7 @@ import Slide from "react-reveal/Slide";
 import styled, { css } from "styled-components";
 
 const width = "100%",
-  height = "300px";
+  height = "320px";
 const Container = styled.div`
   display: flex;
   flex-flow: column;
@@ -18,6 +18,9 @@ const Children = styled.div`
   width: ${width};
   position: relative;
   height: ${height};
+  @media (max-width: 840px) {
+    height: 500px;
+  }
 `;
 const Arrow = styled.div`
   text-shadow: 1px 1px 1px #fff;
@@ -55,13 +58,13 @@ const Dots = styled.span`
 
 const TestimonialCard = styled.section`
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column wrap !important;
   padding: 0 4.5em;
   align-items: center;
   color: #0a0e33;
   @media (max-width: 840px) {
-    height: 450px;
-    padding: 0.7em;
+    height: 400px;
+    padding: 0.3em;
     margin: 0;
   }
 `;
@@ -80,12 +83,12 @@ const TestifierName = styled.h2`
     font-size: 0.9em;
   }
 `;
-const TestifierMsg = styled.p`
+const TestifierMsg = styled.div`
   text-align: center;
   font-style: italic;
   margin-top: 1em;
   @media (max-width: 840px) {
-    font-size: 0.9em;
+    font-size: 0.7;
     margin-top: 0.5em;
   }
 `;
@@ -147,8 +150,8 @@ export const CarouselSlider = () => {
           <TestifierMsg>
             Believe me! Mr John is that excellent software developer you have
             been looking to get on your team but it only takes you hiring him
-            for that project/job for you to know how blessed you are for a such
-            a rare gift as him.
+            for that project/job for you to know how blessed you are for such a
+            rare gift as him.
           </TestifierMsg>
         </TestimonialCard>
       </Slide>
@@ -156,18 +159,43 @@ export const CarouselSlider = () => {
         <TestimonialCard>
           <TestifierImg>
             <img
-              src="https://res.cloudinary.com/john-pels/image/upload/v1566911465/devlogo2.png"
+              src="https://res.cloudinary.com/john-pels/image/upload/v1584949054/sadiq.jpg"
               alt="testimonial"
-              style={{ width: "5em", height: "3em" }}
+              style={{ width: "4em", height: "4em", borderRadius: "50%" }}
             />
           </TestifierImg>
-          <TestifierName>Olajide Joshua</TestifierName>
+          <TestifierName>Adeyemi Sadiq</TestifierName>
           <TestifierMsg>
-            John is a very fast leaner, he has achieved in few months what
-            others would in 2 years. His consistency is amazing and how we was
-            able to keep growing his skill while still being a part of a
-            startup’s core team is wonderful. He’s great with leading and
-            awesome with collaborating.
+            I’ve known and mentored John for the past five years. I’ve always
+            been impressed with his ability to handle projects while at the
+            university. He is always motivated to handle software tasks and his
+            expertise in how he handles the colossal task and breaks it down to
+            chunks.John would be an excellent addition to your team. Please feel
+            free to contact me by Email
+            <strong>
+              (sadiq.adeyemi@gplustechsolutions.com) or (+2347062605399)
+            </strong>
+          </TestifierMsg>
+        </TestimonialCard>
+      </Slide>
+
+      <Slide right>
+        <TestimonialCard>
+          <TestifierImg>
+            <img
+              src="https://res.cloudinary.com/john-pels/image/upload/v1585049073/Chidi.jpg"
+              alt="testimonial"
+              style={{ width: "4em", height: "4em", borderRadius: "50%" }}
+            />
+          </TestifierImg>
+          <TestifierName>Chidi Okoye</TestifierName>
+          <TestifierMsg>
+            John's ability to come up with simple, yet efficient solutions to
+            complex problems is definitely something I admire so much about him.
+            His great dedication to learning and self-improvement is also very
+            commendable. He is a really good team player, and has huge impact on
+            both team efficiency and morale. Definitely a pleasure to work with
+            him.
           </TestifierMsg>
         </TestimonialCard>
       </Slide>

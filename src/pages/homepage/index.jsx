@@ -202,29 +202,39 @@ const Homepage = () => {
           <div className="row">
             <div className="col-lg-7 col-sm-12">
               <Slide left>
-                <form action="" className="contact-form">
+                <form
+                  method="POST"
+                  name="contact"
+                  data-netlify="true"
+                  className="contact-form"
+                >
                   <input
                     type="text"
                     placeholder="Full Name"
                     className="form-input"
+                    name="name"
                     required
                   />
                   <input
                     type="email"
                     placeholder="Email Address"
                     className="form-input"
+                    email="email"
                     required
                   />
                   <input
                     type="text"
                     placeholder="Subject"
                     className="form-input"
+                    name="subject"
                     required
                   />
                   <textarea
                     cols="5"
                     rows="5"
                     placeholder="Your Message"
+                    name="message"
+                    required
                   ></textarea>
                   <button type="submit" className="btn-contact">
                     Send Message &nbsp;
