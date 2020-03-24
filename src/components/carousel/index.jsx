@@ -19,7 +19,7 @@ const Children = styled.div`
   position: relative;
   height: ${height};
   @media (max-width: 840px) {
-    height: 500px;
+    height: 400px;
   }
 `;
 const Arrow = styled.div`
@@ -80,7 +80,7 @@ const TestifierName = styled.h2`
   font-weight: 600;
   margin-top: 0.5em;
   @media (max-width: 840px) {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 `;
 const TestifierMsg = styled.div`
