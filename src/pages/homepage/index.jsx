@@ -175,13 +175,70 @@ const Homepage = () => {
           <div className="border-b "></div>
           <div className="row">
             <div className="col-lg-4">
-              <div className="project-col"></div>
+              <div className="project-col">
+                <div className="project__wrap">
+                  <h3 className="project__name">Project Name</h3>
+                  <div className="border-b "></div>
+                  <div className="project__image">
+                    <FontAwesomeIcon icon={faCode} className="icon" />
+                  </div>
+                  <p className="project__stack">
+                    JavaScript, React, HTML5, CSS3 and Node.js
+                  </p>
+                  <a
+                    href="https://github.com/John-pels"
+                    className="project__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="col-lg-4">
-              <div className="project-col"></div>
+              <div className="project-col">
+                <div className="project__wrap">
+                  <h3 className="project__name">Project Name</h3>
+                  <div className="border-b "></div>
+                  <div className="project__image">
+                    <FontAwesomeIcon icon={faCode} className="icon" />
+                  </div>
+                  <p className="project__stack">
+                    JavaScript, React, HTML5, CSS3 and Node.js
+                  </p>
+                  <a
+                    href="https://github.com/John-pels"
+                    className="project__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="col-lg-4">
-              <div className="project-col"></div>
+              <div className="project-col">
+                <div className="project__wrap">
+                  <h3 className="project__name">Project Name</h3>
+                  <div className="border-b "></div>
+                  <div className="project__image">
+                    <FontAwesomeIcon icon={faCode} className="icon" />
+                  </div>
+                  <p className="project__stack">
+                    JavaScript, React, HTML5, CSS3 and Node.js
+                  </p>
+                  <a
+                    href="https://github.com/John-pels"
+                    className="project__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -80,6 +80,7 @@
         border: none;
         height: 40px;
         line-height: 40px;
+        outline: none;
         font-weight: 600;
         font-size: 0.8em;
         color: #0a0e33;
@@ -142,6 +143,7 @@
         border: none;
         height: 40px;
         font-size: 0.8em;
+        outline: none;
         line-height: 40px;
         font-weight: 600;
         cursor: pointer;
@@ -269,6 +271,7 @@
       &:hover {
         width: 150px;
       }
+
     }
 
     .project-col {
@@ -283,8 +286,108 @@
 
       &:hover {
         box-shadow: 0px 0px 8px #090833;
-        transform: scale(1.1);
       }
+
+      .project__wrap {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        columns: #090833;
+
+        .border-b {
+          display: flex;
+          width: 70px;
+          border-bottom: 3px solid lighten(#090833, 5%);
+          margin-bottom: 1.5em;
+          transition: all 0.5s ease-in-out;
+        }
+
+
+        .project__image {
+          display: flex;
+          justify-content: center;
+          background: #090833;
+          color: #FFF;
+          width: 150px;
+          height: 150px;
+          font-size: 3em;
+          box-shadow: 0px 0px 8px #434346;
+
+          border-radius: 50%;
+
+          .icon {
+            margin-top: 1em;
+          }
+        }
+
+        .project__name {
+          font-size: 1.5em;
+        }
+
+        .project__stack {
+          margin-top: 1em;
+          font-size: 1.2em;
+          text-align-last: center;
+
+          @media(max-width: 767px) {
+            text-align: center;
+          }
+        }
+
+        .project__link {
+          width: 50%;
+          height: 3em;
+          line-height: 3em;
+          text-align: center;
+          background: #D95284;
+          border-radius: .2em;
+          color: #FFF;
+          text-decoration: none;
+          transition: all 0.3s;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            background-color: none;
+            border-radius: 4px;
+            z-index: -2;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            line-height: 40px;
+            background-color: darken(#D95284, 10%);
+            transition: all 0.3s;
+            border-radius: 4px;
+            z-index: -1;
+          }
+
+          &:hover {
+            color: #FFF;
+            border: none;
+
+            &:before {
+              width: 100%;
+            }
+          }
+
+        }
+      }
+
+
     }
   }
 

@@ -37,16 +37,14 @@ class ContactForm extends Component {
   };
 
   resetForm = () => {
-    setInterval(
-      this.setState({
-        fullName: "",
-        email: "",
-        subject: "",
-        message: ""
-      }),
-      2000
-    );
+    this.setState({
+      fullName: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
   };
+
   handleSubmit = e => {
     e.preventDefault();
     const templateId = "contact_form";
