@@ -69,12 +69,14 @@ const Homepage = () => {
                   </p>
                   <div className="about-buttons">
                     <button className="about-btn-work">Blog</button>
-
-                    <button className="about-btn-download">
-                      <a href={Pdf} target="_blank" rel="noopener noreferrer">
-                        Download CV
-                      </a>
-                    </button>
+                    <a
+                      href={Pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="about-btn-download"
+                    >
+                      Download CV
+                    </a>
                   </div>
                 </Slide>
               </section>
