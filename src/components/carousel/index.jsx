@@ -117,14 +117,14 @@ const Carousel = makeCarousel(CarouselUI);
 
 export const CarouselSlider = () => {
   return (
-    <Carousel>
+    <Carousel defaultWait={7000}>
       <Slide right>
         <TestimonialCard>
           <TestifierImg>
             <img
               src="https://res.cloudinary.com/john-pels/image/upload/v1566911465/devlogo2.png"
               alt="testimonial"
-              style={{ width: "5em", height: "4em" }}
+              style={{ width: "5em", height: "3em" }}
             />
           </TestifierImg>
           <TestifierName>Akintunde Sultan</TestifierName>
@@ -152,7 +152,7 @@ export const CarouselSlider = () => {
             designs into pixel-perfect code. He is able understand complex
             problems quickly and write well designed code to solve these
             problems. John is a natural leader who can communicate well with his
-            teammates and clients
+            teammates and clients.
           </TestifierMsg>
         </TestimonialCard>
       </Slide>
