@@ -3,6 +3,7 @@ import Header from "../../components/header";
 import Slide from "react-reveal/Slide";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CarouselSlider } from "../../components/carousel";
+import ContactForm from "../../components/Form";
 import Pdf from "../../components/resume.pdf";
 import {
   faDesktop,
@@ -11,7 +12,6 @@ import {
   faPeopleCarry,
   faUserAlt,
   faPencilAlt,
-  faArrowRight,
   faEnvelope,
   faPhoneAlt,
   faMapMarkerAlt
@@ -202,45 +202,7 @@ const Homepage = () => {
           <div className="row">
             <div className="col-lg-7 col-sm-12">
               <Slide left>
-                <form
-                  method="POST"
-                  name="contact"
-                  data-netlify="true"
-                  className="contact-form"
-                >
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="form-input"
-                    name="name"
-                    required
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="form-input"
-                    email="email"
-                    required
-                  />
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    className="form-input"
-                    name="subject"
-                    required
-                  />
-                  <textarea
-                    cols="5"
-                    rows="5"
-                    placeholder="Your Message"
-                    name="message"
-                    required
-                  ></textarea>
-                  <button type="submit" className="btn-contact">
-                    Send Message &nbsp;
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </button>
-                </form>
+                <ContactForm />
               </Slide>
             </div>
             <div className="col-lg-5 col-sm-12">
