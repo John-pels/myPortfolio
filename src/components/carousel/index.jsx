@@ -124,7 +124,7 @@ export const CarouselSlider = () => {
             <img
               src="https://res.cloudinary.com/john-pels/image/upload/v1566911465/devlogo2.png"
               alt="testimonial"
-              style={{ width: "5em", height: "3em" }}
+              style={{ width: "5em", height: "4em" }}
             />
           </TestifierImg>
           <TestifierName>Akintunde Sultan</TestifierName>
@@ -141,9 +141,28 @@ export const CarouselSlider = () => {
         <TestimonialCard>
           <TestifierImg>
             <img
+              src="https://res.cloudinary.com/john-pels/image/upload/v1585119611/Chris.jpg"
+              alt="testimonial"
+              style={{ width: "5em", height: "5em", borderRadius: "50%" }}
+            />
+          </TestifierImg>
+          <TestifierName>Chris Blakely</TestifierName>
+          <TestifierMsg>
+            John is an incredibly talented frontend developer who can turn
+            designs into pixel-perfect code. He is able understand complex
+            problems quickly and write well designed code to solve these
+            problems. John is a natural leader who can communicate well with his
+            teammates and clients
+          </TestifierMsg>
+        </TestimonialCard>
+      </Slide>
+      <Slide right>
+        <TestimonialCard>
+          <TestifierImg>
+            <img
               src="https://res.cloudinary.com/john-pels/image/upload/v1584945486/darling.jpg"
               alt="testimonial"
-              style={{ width: "4em", height: "4em", borderRadius: "50%" }}
+              style={{ width: "5em", height: "5em", borderRadius: "50%" }}
             />
           </TestifierImg>
           <TestifierName>Oyekanmi Tofunmi</TestifierName>
@@ -161,7 +180,7 @@ export const CarouselSlider = () => {
             <img
               src="https://res.cloudinary.com/john-pels/image/upload/v1584949054/sadiq.jpg"
               alt="testimonial"
-              style={{ width: "4em", height: "4em", borderRadius: "50%" }}
+              style={{ width: "5em", height: "5em", borderRadius: "50%" }}
             />
           </TestifierImg>
           <TestifierName>Adeyemi Sadiq</TestifierName>
@@ -185,7 +204,7 @@ export const CarouselSlider = () => {
             <img
               src="https://res.cloudinary.com/john-pels/image/upload/v1585049073/Chidi.jpg"
               alt="testimonial"
-              style={{ width: "4em", height: "4em", borderRadius: "50%" }}
+              style={{ width: "5em", height: "5em", borderRadius: "50%" }}
             />
           </TestifierImg>
           <TestifierName>Chidi Okoye</TestifierName>
