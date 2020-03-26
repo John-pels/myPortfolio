@@ -13,6 +13,10 @@
   padding: 0;
 }
 
+.MuiDrawer-paper {
+  height: 40% !important;
+}
+
 header {
   display: flex;
   min-height: 100vh;
