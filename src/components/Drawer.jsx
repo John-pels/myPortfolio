@@ -3,11 +3,30 @@ import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
+import PersonIcon from "@material-ui/icons/Person";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
+import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
+import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
+
+const ulStyles = {
+  display: "flex",
+  flexFlow: "column",
+  listStyleType: "none",
+  fontSize: "1.5em",
+  cursor: "pointer",
+  padding: "1em"
+};
+const liStyles = {
+  paddingBottom: ".5em"
+};
+const aStyles = {
+  textDecoration: "none",
+  color: "#090833"
+};
+const iconStyles = {
+  marginRight: ".5em"
+};
 
 const useStyles = makeStyles({
   list: {
@@ -18,7 +37,10 @@ const useStyles = makeStyles({
   }
 });
 
-export function TemporaryDrawer(props) {
+export function TemporaryDrawer(
+  props,
+  { about, blog, contact, portfolio, testimonial }
+) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false
@@ -43,38 +65,38 @@ export function TemporaryDrawer(props) {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        {["About", "Blog", "Contact", "Portfolio", "Resume"].map(
-          (text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          )
-        )}
-      </List>
-    </div>
-  );
-
-  const fullList = side => (
-    <div
-      className={classes.fullList}
-      role="presentation"
-      onClick={toggleDrawer(side, false)}
-      onKeyDown={toggleDrawer(side, false)}
-    >
-      <List>
-        {["About", "Contact", "Blogs", "Portfolio", "Resume"].map(
-          (text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          )
-        )}
+        <ul style={ulStyles}>
+          <li style={liStyles}>
+            <a href="#about" rel="noopener noreferrer" style={aStyles}>
+              <PersonIcon style={iconStyles} />
+              About
+            </a>
+          </li>
+          <li style={liStyles}>
+            <a href="#blog" rel="noopener noreferrer" style={aStyles}>
+              <MenuBookIcon style={iconStyles} />
+              Blog
+            </a>
+          </li>
+          <li style={liStyles}>
+            <a href="#contact" rel="noopener noreferrer" style={aStyles}>
+              <ContactPhoneIcon style={iconStyles} />
+              Contact
+            </a>
+          </li>
+          <li style={liStyles}>
+            <a href="#portfolio" rel="noopener noreferrer" style={aStyles}>
+              <DeveloperModeIcon style={iconStyles} />
+              Portfolio
+            </a>
+          </li>
+          <li style={liStyles}>
+            <a href="#testimonial" rel="noopener noreferrer" style={aStyles}>
+              <PeopleAltIcon style={iconStyles} />
+              Testimonial
+            </a>
+          </li>
+        </ul>
       </List>
     </div>
   );
@@ -86,20 +108,7 @@ export function TemporaryDrawer(props) {
       <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
         {sideList("left")}
       </Drawer>
-      <Drawer
-        anchor="top"
-        open={state.top}
-        onClose={toggleDrawer("top", false)}
-      >
-        {fullList("top")}
-      </Drawer>
-      <Drawer
-        anchor="bottom"
-        open={state.bottom}
-        onClose={toggleDrawer("bottom", false)}
-      >
-        {fullList("bottom")}
-      </Drawer>
+
       <Drawer
         anchor="right"
         open={state.right}
