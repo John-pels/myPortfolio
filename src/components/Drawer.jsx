@@ -15,7 +15,7 @@ const ulStyles = {
   listStyleType: "none",
   fontSize: "1.5em",
   cursor: "pointer",
-  padding: "1em"
+  padding: "2em 1em"
 };
 const liStyles = {
   paddingBottom: ".5em"
