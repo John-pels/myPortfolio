@@ -8,6 +8,7 @@ import MenuBookIcon from "@material-ui/icons/MenuBook";
 import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
 import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
 import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 const ulStyles = {
   display: "flex",
@@ -15,7 +16,7 @@ const ulStyles = {
   listStyleType: "none",
   fontSize: "1.5em",
   cursor: "pointer",
-  padding: "2em 1em"
+  padding: " 1em"
 };
 const liStyles = {
   paddingBottom: ".5em"
@@ -28,6 +29,20 @@ const iconStyles = {
   marginRight: ".5em"
 };
 
+const backArrow = {
+  fontSize: "1.8em",
+  marginTop: ".4em",
+  marginRight: "1em"
+};
+
+const heading = {
+  display: "flex",
+  justifyContent: "space-evenly",
+  background: "#090833",
+  color: "#FFF",
+  padding: ".3em 0"
+};
+
 const useStyles = makeStyles({
   list: {
     width: 250
@@ -37,10 +52,7 @@ const useStyles = makeStyles({
   }
 });
 
-export function TemporaryDrawer(
-  props,
-  { about, blog, contact, portfolio, testimonial }
-) {
+export function TemporaryDrawer(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false
@@ -65,6 +77,13 @@ export function TemporaryDrawer(
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
+        <div style={heading}>
+          <span>
+            <ArrowBackIcon style={backArrow} />
+          </span>
+          <h2 className="text-center mt-2">Menu</h2>
+        </div>
+
         <ul style={ulStyles}>
           <li style={liStyles}>
             <a href="#about" rel="noopener noreferrer" style={aStyles}>
