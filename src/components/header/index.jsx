@@ -55,7 +55,11 @@ const Header = ({ about, blog, contact, portfolio, testimonial, project }) => (
               </a>
             </li>
             <li>
-              <a href={`#${blog}`} rel="noopener noreferrer">
+              <a
+                href="https://johnpels.hashnode.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Blog
               </a>
             </li>
