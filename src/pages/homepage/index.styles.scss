@@ -10,10 +10,6 @@
   padding: 0;
 }
 
-.MuiDrawer-paper {
-  height: 50%;
-}
-
 .homepage {
   .about {
     display: flex;
@@ -87,6 +83,8 @@
         outline: none;
         font-weight: 600;
         font-size: 0.8em;
+        text-decoration: none;
+        text-align: center;
         color: #0a0e33;
         cursor: pointer;
         text-transform: uppercase;
