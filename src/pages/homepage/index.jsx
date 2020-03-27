@@ -68,7 +68,14 @@ const Homepage = () => {
                     for the public.
                   </p>
                   <div className="about-buttons">
-                    <button className="about-btn-work">Blog</button>
+                    <a
+                      href="https://johnpels.hashnode.dev/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="about-btn-work"
+                    >
+                      Blog
+                    </a>
                     <a
                       href={Pdf}
                       target="_blank"
