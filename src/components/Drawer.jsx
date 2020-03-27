@@ -14,9 +14,9 @@ const ulStyles = {
   display: "flex",
   flexFlow: "column",
   listStyleType: "none",
-  fontSize: "1.5em",
+  fontSize: "1.2em",
   cursor: "pointer",
-  padding: " 1em"
+  padding: " 1.3em"
 };
 const liStyles = {
   paddingBottom: ".5em"
@@ -38,9 +38,13 @@ const backArrow = {
 const heading = {
   display: "flex",
   justifyContent: "space-evenly",
+  marginTop: "-.5em",
   background: "#090833",
   color: "#FFF",
   padding: ".3em 0"
+};
+const h2Styles = {
+  fontSize: "1.6em"
 };
 
 const useStyles = makeStyles({
@@ -81,7 +85,9 @@ export function TemporaryDrawer(props) {
           <span>
             <ArrowBackIcon style={backArrow} />
           </span>
-          <h2 className="text-center mt-2">Menu</h2>
+          <h2 className="text-center mt-2" style={h2Styles}>
+            Menu
+          </h2>
         </div>
 
         <ul style={ulStyles}>
