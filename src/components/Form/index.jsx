@@ -20,28 +20,10 @@ class ContactForm extends Component {
     };
   }
 
-  updateName = event => {
-    this.setState({
-      fullName: event.target.value
-    });
+  handleChange = event => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
   };
-  updateEmail = event => {
-    this.setState({
-      email: event.target.value
-    });
-  };
-  updateSubject = event => {
-    this.setState({
-      subject: event.target.value
-    });
-  };
-  updateMessage = event => {
-    this.setState({
-      message: event.target.value
-    });
-  };
-
-  // handleChange = e => this.setState({ [e.target.fullName]: e.target.value });
 
   resetForm = () => {
     this.setState({
@@ -125,7 +107,7 @@ class ContactForm extends Component {
           name="fullName"
           className="form-input"
           value={fullName}
-          onChange={this.updateName}
+          onChange={this.handleChange}
           required
         />
         <input
@@ -134,7 +116,7 @@ class ContactForm extends Component {
           name="email"
           className="form-input"
           value={email}
-          onChange={this.updateEmail}
+          onChange={this.handleChange}
           required
         />
         <input
@@ -143,7 +125,7 @@ class ContactForm extends Component {
           name="subject"
           className="form-input"
           value={subject}
-          onChange={this.updateSubject}
+          onChange={this.handleChange}
           required
         />
         <textarea
@@ -152,7 +134,7 @@ class ContactForm extends Component {
           placeholder="Your Message"
           name="message"
           value={message}
-          onChange={this.updateMessage}
+          onChange={this.handleChange}
           required
         ></textarea>
         <button type="submit" className="btn-contact">
