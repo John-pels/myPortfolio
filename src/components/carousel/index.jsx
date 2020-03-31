@@ -187,9 +187,9 @@ export const CarouselSlider = () => {
           <TestifierMsg>
             I’ve known and mentored John for the past five years. I’ve always
             been impressed with his ability to handle projects while at the
-            {/* university. He is always motivated to handle software tasks and his
+            university. He is always motivated to handle software tasks and his
             expertise in how he handles the colossal task and breaks it down to
-            chunks.John would be an excellent addition to your team. Please feel */}
+            chunks.John would be an excellent addition to your team. Please feel
             free to contact me by Email
             <strong>
               (sadiq.adeyemi@gplustechsolutions.com) or (+2347062605399)
