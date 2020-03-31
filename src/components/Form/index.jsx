@@ -4,11 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./form.styles.scss";
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
 class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -35,60 +30,36 @@ class ContactForm extends Component {
   };
 
   handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "message", ...this.state })
-    })
-      .then(() =>
+    e.preventDefault();
+    const templateId = "contact_form";
+    this.sendFeedback(templateId, {
+      subject: this.state.subject,
+      message: this.state.message,
+      fullName: this.state.fullName,
+      reply_to: this.state.email
+    });
+    this.resetForm();
+  };
+
+  sendFeedback(templateId, variables) {
+    window.emailjs
+      .send("gmail", templateId, variables)
+      .then(() => {
         swal({
           title: "Thank you!",
           text: "Message sent successfully,\n We'll get back to you shortly.",
           icon: "success"
-        })
-      )
-      .catch(error =>
+        });
+      })
+      .catch(() => {
         swal({
-          title: "Ooooops!",
-          text: error,
-          icon: "danger"
-        })
-      );
-
-    e.preventDefault();
-  };
-
-  // handleSubmit = e => {
-  //   e.preventDefault();
-  //   const templateId = "contact_form";
-  //   this.sendFeedback(templateId, {
-  //     subject: this.state.subject,
-  //     message: this.state.message,
-  //     fullName: this.state.fullName,
-  //     reply_to: this.state.email
-  //   });
-  //   this.resetForm();
-  // };
-
-  // sendFeedback(templateId, variables) {
-  //   window.emailjs
-  //     .send("gmail", templateId, variables)
-  //     .then(() => {
-  //       swal({
-  //         title: "Thank you!",
-  //         text: "Message sent successfully,\n We'll get back to you shortly.",
-  //         icon: "success"
-  //       });
-  //     })
-  //     .catch(() => {
-  //       swal({
-  //         title: "Oooooops!",
-  //         text: "Something went wrong, please try again.",
-  //         icon: "warning",
-  //         dangerMode: true
-  //       });
-  //     });
-  // }
+          title: "Oooooops!",
+          text: "Something went wrong, please try again.",
+          icon: "warning",
+          dangerMode: true
+        });
+      });
+  }
 
   render() {
     const { fullName, email, subject, message } = this.state;
