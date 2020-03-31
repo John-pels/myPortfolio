@@ -8,6 +8,22 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #0a0e33 #FFF;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  border-radius: 20px;
+  border: 3px solid #0a0e33;
 }
 
 .homepage {
