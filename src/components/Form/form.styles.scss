@@ -4,7 +4,9 @@
   padding: 2em 0;
 
   input::placeholder,
-  textarea::placeholder {
+  textarea::placeholder,
+  input::-ms-input-placeholder,
+  input::-webkit-input-placeholder {
     font-size: 0.8em;
   }
 
@@ -15,6 +17,13 @@
     padding-left: 1em;
     outline: none;
     border: 1px solid #090833;
+    transition: all .5s ease-in-out;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #df3249;
+
+    }
   }
 
   textarea {
@@ -22,6 +31,12 @@
     margin-bottom: 2em;
     outline: none;
     border: 1px solid #090833;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #df3249;
+
+    }
   }
 
   .btn-contact {

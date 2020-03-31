@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   flex-flow: column;
   box-shadow: 0px 0px 3px 0px rgb(145, 143, 143);
-  padding: 1.5em;
+  padding: 1.5em 0.5em;
   position: relative;
   overflow: hidden;
   width: ${width};
@@ -19,7 +19,7 @@ const Children = styled.div`
   position: relative;
   height: ${height};
   @media (max-width: 840px) {
-    height: 400px;
+    min-height: 400px;
   }
 `;
 const Arrow = styled.div`
@@ -59,7 +59,6 @@ const Dots = styled.span`
 const TestimonialCard = styled.section`
   display: flex;
   flex-flow: column wrap !important;
-  padding: 0 4.5em;
   align-items: center;
   color: #0a0e33;
   @media (max-width: 840px) {
@@ -88,6 +87,7 @@ const TestifierMsg = styled.div`
   font-style: italic;
   margin-top: 1em;
   @media (max-width: 840px) {
+    word-wrap: auto;
     font-size: 0.7;
     margin-top: 0.5em;
   }
@@ -187,9 +187,9 @@ export const CarouselSlider = () => {
           <TestifierMsg>
             I’ve known and mentored John for the past five years. I’ve always
             been impressed with his ability to handle projects while at the
-            university. He is always motivated to handle software tasks and his
+            {/* university. He is always motivated to handle software tasks and his
             expertise in how he handles the colossal task and breaks it down to
-            chunks.John would be an excellent addition to your team. Please feel
+            chunks.John would be an excellent addition to your team. Please feel */}
             free to contact me by Email
             <strong>
               (sadiq.adeyemi@gplustechsolutions.com) or (+2347062605399)
