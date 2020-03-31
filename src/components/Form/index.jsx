@@ -95,12 +95,10 @@ class ContactForm extends Component {
     return (
       <form
         className="contact-form"
-        method="POST"
         onSubmit={this.handleSubmit}
-        data-netlify="true"
+        netlify
         name="message"
       >
-        {/* <input type="hidden" name="form-name" value="message" /> */}
         <input
           type="text"
           placeholder="Full Name"
