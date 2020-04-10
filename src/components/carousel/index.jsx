@@ -33,7 +33,7 @@ const Arrow = styled.div`
   font-size: 1.5em;
   cursor: pointer;
   user-select: none;
-  ${props =>
+  ${(props) =>
     props.right
       ? css`
           left: 95%;
@@ -61,9 +61,11 @@ const TestimonialCard = styled.section`
   flex-flow: column wrap !important;
   align-items: center;
   color: #0a0e33;
+  padding: 1em;
+
   @media (max-width: 840px) {
     height: 400px;
-    padding: 0.3em;
+    padding: 0.5em;
     margin: 0;
   }
 `;
