@@ -14,7 +14,7 @@ import {
   faPencilAlt,
   faEnvelope,
   faPhoneAlt,
-  faMapMarkerAlt
+  faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.styles.scss";
 
