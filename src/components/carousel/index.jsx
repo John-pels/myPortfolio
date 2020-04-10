@@ -95,6 +95,12 @@ const TestifierMsg = styled.div`
   }
 `;
 
+const MobileHide = styled.span`
+  @media (max-width: 450px) {
+    display: none;
+  }
+`;
+
 const CarouselUI = ({ position, total, handleClick, children }) => (
   <Container>
     <Children>
@@ -162,24 +168,6 @@ export const CarouselSlider = () => {
         <TestimonialCard>
           <TestifierImg>
             <img
-              src="https://res.cloudinary.com/john-pels/image/upload/v1584945486/darling.jpg"
-              alt="testimonial"
-              style={{ width: "5em", height: "5em", borderRadius: "50%" }}
-            />
-          </TestifierImg>
-          <TestifierName>Oyekanmi Tofunmi</TestifierName>
-          <TestifierMsg>
-            Believe me! Mr John is that excellent software developer you have
-            been looking to get on your team but it only takes you hiring him
-            for that project/job for you to know how blessed you are for such a
-            rare gift as him.
-          </TestifierMsg>
-        </TestimonialCard>
-      </Slide>
-      <Slide right>
-        <TestimonialCard>
-          <TestifierImg>
-            <img
               src="https://res.cloudinary.com/john-pels/image/upload/v1584949054/sadiq.jpg"
               alt="testimonial"
               style={{ width: "5em", height: "5em", borderRadius: "50%" }}
@@ -191,11 +179,31 @@ export const CarouselSlider = () => {
             been impressed with his ability to handle projects while at the
             university. He is always motivated to handle software tasks and his
             expertise in how he handles the colossal task and breaks it down to
-            chunks.John would be an excellent addition to your team. Please feel
-            free to contact me by Email
-            <strong>
-              (sadiq.adeyemi@gplustechsolutions.com) or (+2347062605399)
-            </strong>
+            chunks. John would be an excellent addition to your team.
+            <MobileHide>
+              Please feel free to contact me by Email
+              <strong>
+                (sadiq.adeyemi@gplustechsolutions.com) or (+2347062605399)
+              </strong>
+            </MobileHide>
+          </TestifierMsg>
+        </TestimonialCard>
+      </Slide>
+      <Slide right>
+        <TestimonialCard>
+          <TestifierImg>
+            <img
+              src="https://res.cloudinary.com/john-pels/image/upload/v1584945486/darling.jpg"
+              alt="testimonial"
+              style={{ width: "5em", height: "5em", borderRadius: "50%" }}
+            />
+          </TestifierImg>
+          <TestifierName>Oyekanmi Tofunmi</TestifierName>
+          <TestifierMsg>
+            Believe me! Mr John is that excellent software developer you have
+            been looking to get on your team but it only takes you hiring him
+            for that project/job for you to know how blessed you are for such a
+            rare gift as him.
           </TestifierMsg>
         </TestimonialCard>
       </Slide>
