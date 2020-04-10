@@ -187,16 +187,20 @@ const Homepage = () => {
               <div className="col-lg-4">
                 <div className="project-col">
                   <div className="project__wrap">
-                    <h3 className="project__name">Project Name</h3>
+                    <h3 className="project__name">Giphy Search Engine</h3>
                     <div className="border-b "></div>
                     <div className="project__image">
-                      <FontAwesomeIcon icon={faCode} className="icon" />
+                      <img
+                        src="https://res.cloudinary.com/john-pels/image/upload/v1586532828/gif1.png"
+                        alt="img"
+                        className="p-img"
+                      />
                     </div>
                     <p className="project__stack">
-                      JavaScript, React, HTML5, CSS3 and Node.js
+                      React, SASS, CSS3 and Giphy API
                     </p>
                     <a
-                      href="https://github.com/John-pels"
+                      href="https://giph-search.netlify.com/"
                       className="project__link"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -209,16 +213,20 @@ const Homepage = () => {
               <div className="col-lg-4">
                 <div className="project-col">
                   <div className="project__wrap">
-                    <h3 className="project__name">Project Name</h3>
+                    <h3 className="project__name">Feeling Pressed</h3>
                     <div className="border-b "></div>
                     <div className="project__image">
-                      <FontAwesomeIcon icon={faCode} className="icon" />
+                      <img
+                        src="https://res.cloudinary.com/john-pels/image/upload/v1586532833/Screenshot_from_2020-04-10_10-13-05.png"
+                        alt="img"
+                        className="p-img"
+                      />
                     </div>
                     <p className="project__stack">
-                      JavaScript, React, HTML5, CSS3 and Node.js
+                      JavaScript, React, SASS, Node and Express.js
                     </p>
                     <a
-                      href="https://github.com/John-pels"
+                      href="https://feeling-pressed.netlify.com/"
                       className="project__link"
                       target="_blank"
                       rel="noopener noreferrer"
