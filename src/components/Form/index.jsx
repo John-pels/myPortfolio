@@ -11,11 +11,11 @@ class ContactForm extends Component {
       fullName: "",
       email: "",
       subject: "",
-      message: ""
+      message: "",
     };
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   };
@@ -25,18 +25,18 @@ class ContactForm extends Component {
       fullName: "",
       email: "",
       subject: "",
-      message: ""
+      message: "",
     });
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const templateId = "contact_form";
     this.sendFeedback(templateId, {
       subject: this.state.subject,
       message: this.state.message,
       fullName: this.state.fullName,
-      reply_to: this.state.email
+      reply_to: this.state.email,
     });
     this.resetForm();
   };
@@ -48,7 +48,7 @@ class ContactForm extends Component {
         swal({
           title: "Thank you!",
           text: "Message sent successfully,\n We'll get back to you shortly.",
-          icon: "success"
+          icon: "success",
         });
       })
       .catch(() => {
@@ -56,7 +56,7 @@ class ContactForm extends Component {
           title: "Oooooops!",
           text: "Something went wrong, please try again.",
           icon: "warning",
-          dangerMode: true
+          dangerMode: true,
         });
       });
   }
@@ -67,7 +67,6 @@ class ContactForm extends Component {
       <form
         className="contact-form"
         onSubmit={this.handleSubmit}
-        netlify
         name="message"
       >
         <input
