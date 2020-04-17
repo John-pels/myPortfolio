@@ -239,16 +239,20 @@ const Homepage = () => {
               <div className="col-lg-4">
                 <div className="project-col">
                   <div className="project__wrap">
-                    <h3 className="project__name">Project Name</h3>
+                    <h3 className="project__name">ReallyGoodHmo</h3>
                     <div className="border-b "></div>
                     <div className="project__image">
-                      <FontAwesomeIcon icon={faCode} className="icon" />
+                      <img
+                        src="https://res.cloudinary.com/john-pels/image/upload/v1587106815/reallyGoodHmo.png"
+                        alt="img"
+                        className="p-img"
+                      />
                     </div>
                     <p className="project__stack">
-                      JavaScript, React, HTML5, CSS3 and Node.js
+                      HTML5, CSS3, SASS, jQuery and Vanilla JS
                     </p>
                     <a
-                      href="https://github.com/John-pels"
+                      href="http://www.reallygoodhmo.com/"
                       className="project__link"
                       target="_blank"
                       rel="noopener noreferrer"
