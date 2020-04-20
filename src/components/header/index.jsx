@@ -1,7 +1,7 @@
 import React from "react";
 import TocSharpIcon from "@material-ui/icons/TocSharp";
 import Zoom from "react-reveal/Zoom";
-
+import Switch from "../Switch";
 import Particles from "react-particles-js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,7 +10,7 @@ import {
   faMediumM,
   faLinkedinIn,
   faInstagram,
-  faGithub
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { TemporaryDrawer } from "../Drawer";
 import Typical from "react-typical";
@@ -23,25 +23,25 @@ const Header = ({ about, blog, contact, portfolio, testimonial, project }) => (
       params={{
         particles: {
           number: {
-            value: 40
+            value: 40,
           },
           size: {
-            value: 3
-          }
+            value: 3,
+          },
         },
         interactivity: {
           events: {
             onhover: {
               enable: true,
-              mode: "repulse"
-            }
-          }
-        }
+              mode: "repulse",
+            },
+          },
+        },
       }}
       style={{
         position: "absolute",
         width: "100%",
-        height: "100vh"
+        height: "100vh",
       }}
     />
     <div className="container">
@@ -78,6 +78,9 @@ const Header = ({ about, blog, contact, portfolio, testimonial, project }) => (
                 Testimonial
               </a>
             </li>
+            <li style={{ marginTop: "-.5em", marginLeft: "4em" }}>
+              <Switch />
+            </li>
 
             <TemporaryDrawer openRight={<TocSharpIcon className="icon" />} />
           </ul>
@@ -91,11 +94,11 @@ const Header = ({ about, blog, contact, portfolio, testimonial, project }) => (
               <Typical
                 steps={[
                   "Mobile Web Specialist,",
-                  3000,
+                  5000,
                   "Frontend Engineer",
-                  3000,
+                  5000,
                   "Computer Scientist",
-                  3000
+                  5000,
                 ]}
                 loop={Infinity}
                 wrapper="p"
