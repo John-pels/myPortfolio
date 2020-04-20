@@ -72,7 +72,7 @@ const Homepage = () => {
                       href="https://johnpels.hashnode.dev/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="about-btn-work"
+                      className="about-btn-blog"
                     >
                       Blog
                     </a>
