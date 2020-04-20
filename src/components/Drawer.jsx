@@ -9,6 +9,8 @@ import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
 import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
 import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import Switch from "../components/Switch";
+import Content from "../components/Content";
 
 const ulStyles = {
   display: "flex",
@@ -16,23 +18,23 @@ const ulStyles = {
   listStyleType: "none",
   fontSize: "1.2em",
   cursor: "pointer",
-  padding: " 1.3em"
+  padding: " 1.3em",
 };
 const liStyles = {
-  paddingBottom: ".5em"
+  paddingBottom: ".5em",
 };
 const aStyles = {
   textDecoration: "none",
-  color: "#090833"
+  color: "#090833",
 };
 const iconStyles = {
-  marginRight: ".5em"
+  marginRight: ".5em",
 };
 
 const backArrow = {
   fontSize: "1.8em",
   marginTop: ".4em",
-  marginRight: "1em"
+  marginRight: "1em",
 };
 
 const heading = {
@@ -41,28 +43,28 @@ const heading = {
   marginTop: "-.5em",
   background: "#090833",
   color: "#FFF",
-  padding: ".3em 0"
+  padding: ".3em 0",
 };
 const h2Styles = {
-  fontSize: "1.6em"
+  fontSize: "1.6em",
 };
 
 const useStyles = makeStyles({
   list: {
-    width: 250
+    width: 250,
   },
   fullList: {
-    width: "auto"
-  }
+    width: "auto",
+  },
 });
 
 export function TemporaryDrawer(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    right: false
+    right: false,
   });
 
-  const toggleDrawer = (side, open) => event => {
+  const toggleDrawer = (side, open) => (event) => {
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
@@ -73,7 +75,7 @@ export function TemporaryDrawer(props) {
     setState({ ...state, [side]: open });
   };
 
-  const sideList = side => (
+  const sideList = (side) => (
     <div
       className={classes.list}
       role="presentation"
@@ -120,6 +122,9 @@ export function TemporaryDrawer(props) {
               <PeopleAltIcon style={iconStyles} />
               Testimonial
             </a>
+          </li>
+          <li style={liStyles} className="mt-4 d-flex">
+            <Content /> <Switch />
           </li>
         </ul>
       </List>
