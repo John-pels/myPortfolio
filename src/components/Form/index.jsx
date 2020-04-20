@@ -1,27 +1,24 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import swal from "sweetalert";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./form.styles.scss";
 
-class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fullName: "",
-      email: "",
-      subject: "",
-      message: "",
-    };
-  }
+const ContactForm = () => {
+  const [userData, setUserData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  handleChange = (event) => {
+  const handleChange = (event) => {
     const { name, value } = event.target;
-    this.setState({ [name]: value });
+    setUserData({ ...userData, [name]: value });
   };
 
-  resetForm = () => {
-    this.setState({
+  const resetForm = () => {
+    setUserData({
       fullName: "",
       email: "",
       subject: "",
@@ -29,19 +26,19 @@ class ContactForm extends Component {
     });
   };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const templateId = "contact_form";
-    this.sendFeedback(templateId, {
-      subject: this.state.subject,
-      message: this.state.message,
-      fullName: this.state.fullName,
-      reply_to: this.state.email,
+    sendFeedback(templateId, {
+      subject: userData.subject,
+      message: userData.message,
+      fullName: userData.fullName,
+      reply_to: userData.email,
     });
-    this.resetForm();
+    resetForm();
   };
 
-  sendFeedback(templateId, variables) {
+  const sendFeedback = (templateId, variables) => {
     window.emailjs
       .send("gmail", templateId, variables)
       .then(() => {
@@ -59,59 +56,52 @@ class ContactForm extends Component {
           dangerMode: true,
         });
       });
-  }
+  };
 
-  render() {
-    const { fullName, email, subject, message } = this.state;
-    return (
-      <form
-        className="contact-form"
-        onSubmit={this.handleSubmit}
+  return (
+    <form className="contact-form" onSubmit={handleSubmit} name="message">
+      <input
+        type="text"
+        placeholder="Full Name"
+        name="fullName"
+        className="form-input"
+        value={userData.fullName}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="email"
+        placeholder="Email Address"
+        name="email"
+        className="form-input"
+        value={userData.email}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="text"
+        placeholder="Subject"
+        name="subject"
+        className="form-input"
+        value={userData.subject}
+        onChange={handleChange}
+        required
+      />
+      <textarea
+        cols="5"
+        rows="5"
+        placeholder="Your Message"
         name="message"
-      >
-        <input
-          type="text"
-          placeholder="Full Name"
-          name="fullName"
-          className="form-input"
-          value={fullName}
-          onChange={this.handleChange}
-          required
-        />
-        <input
-          type="email"
-          placeholder="Email Address"
-          name="email"
-          className="form-input"
-          value={email}
-          onChange={this.handleChange}
-          required
-        />
-        <input
-          type="text"
-          placeholder="Subject"
-          name="subject"
-          className="form-input"
-          value={subject}
-          onChange={this.handleChange}
-          required
-        />
-        <textarea
-          cols="5"
-          rows="5"
-          placeholder="Your Message"
-          name="message"
-          value={message}
-          onChange={this.handleChange}
-          required
-        ></textarea>
-        <button type="submit" className="btn-contact">
-          Send Message &nbsp;
-          <FontAwesomeIcon icon={faArrowRight} />
-        </button>
-      </form>
-    );
-  }
-}
+        value={userData.message}
+        onChange={handleChange}
+        required
+      ></textarea>
+      <button type="submit" className="btn-contact">
+        Send Message &nbsp;
+        <FontAwesomeIcon icon={faArrowRight} />
+      </button>
+    </form>
+  );
+};
 
 export default ContactForm;
