@@ -52,7 +52,9 @@ const Homepage = () => {
                   <p className="about-me-p pt-4">
                     Hello, I'm Ajeigbe John Oluseyi, I am a Frontend Engineer
                     based in Ibadan, Nigeria. I currently work as a freelancer
-                    where I build awesome products for client, I previously
+                    where I build awesome products for clients with modern
+                    Technologies such as React, Redux, Firebase e.t.c, and I am
+                    also open to picking up new Technologies. I previously
                     worked with an amazing team of developers at{" "}
                     <a
                       href="https://devcareer.io/"
@@ -306,7 +308,7 @@ const Homepage = () => {
 
       <section className="testimonial " id="testimonial">
         <div className="container">
-          <h4 className="testimonial-h5">Testimonial</h4>
+          <h4 className="testimonial-h5">References</h4>
           <div className="border-b "></div>
           <CarouselSlider />
         </div>
