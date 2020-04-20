@@ -5,8 +5,8 @@ import styled from "styled-components";
 const Container = styled.label`
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 55px;
+  height: 30px;
   margin-right: 15px;
 `;
 
@@ -17,7 +17,7 @@ display: block;
 cursor:pointer;
 width:100%;
 height:100%
-background-color: #090833;
+background-color: #18274D;
 border-radius: 34px;
 -webkit-transition: 0.4s;
 transition: 0.4s;
@@ -25,10 +25,10 @@ transition: 0.4s;
 &::before{
     position:absolute;
     content:"";
-    height:26px;
-    width:26px;
+    height:22px;
+    width:22px;
     margin: 4px;
-    background-color:#F24484;
+    background-color:#765DE8;
     border-radius: 50%;
     -webkit-transition: 0.4s;
     transition: 0.4s;
