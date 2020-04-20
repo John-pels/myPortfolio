@@ -5,11 +5,9 @@ import Switch from "../Switch";
 import Particles from "react-particles-js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookSquare,
   faTwitter,
   faMediumM,
   faLinkedinIn,
-  faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { TemporaryDrawer } from "../Drawer";
@@ -153,24 +151,6 @@ const Header = ({ about, blog, contact, portfolio, testimonial, project }) => (
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-                </a>
-              </div>
-              <div className="handles instagram">
-                <a
-                  href="https://www.instagram.com/john_pels/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faInstagram} size="lg" />
-                </a>
-              </div>
-              <div className="handles facebook">
-                <a
-                  href="https://facebook.com/ajeigbeoluseyi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
                 </a>
               </div>
 
