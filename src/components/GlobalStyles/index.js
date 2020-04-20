@@ -37,17 +37,29 @@ body, #root {
       }
    }
 
-  
+   .btn-hire, 
+   .btn-work{
 
-   .about-btn-download,.about-btn-blog, .btn-contact,.btn-hire, .btn-work{
      border: 1px solid ${({ theme }) => theme.text};
-
-       &:hover {
-        background: ${({ theme }) => theme.text};
-         color: ${({ theme }) => theme.background};
-        
+      &:hover {
+              box-shadow: 0px 0px 4px 0px ${({ theme }) => theme.text};
+              transform: scale(1.02)
         }  
-  }
+   }
+
+   
+   .about-btn-download,
+   .about-btn-blog,
+   .btn-contact{
+     border: 1px solid ${({ theme }) => theme.text};
+         color: ${({ theme }) => theme.text};
+       &:hover {
+         color: ${({ theme }) => theme.background};
+        background: ${({ theme }) => theme.text};
+        } 
+   }
+
+
 
 
   .my-image, .about-me-picture {
@@ -125,29 +137,10 @@ body, #root {
           transition: all 0.5s ease-in-out;
 
           &:hover {
-//   .btn-contact {
-//       color:${({ theme }) => theme.text};
-//     border: 1px solid ${({ theme }) => theme.text};
-      
-//       &:hover {
-//       color:${({ theme }) => theme.text};
-
-//       }
-//   }
             color: #292929;
           }
         }
       }
   }
-
-//   .btn-contact {
-//       color:${({ theme }) => theme.text};
-//     border: 1px solid ${({ theme }) => theme.text};
-      
-//       &:hover {
-//       color:${({ theme }) => theme.text};
-
-//       }
-//   }
 }
 `;
