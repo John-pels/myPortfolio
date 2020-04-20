@@ -37,7 +37,7 @@ const Homepage = () => {
               <section className="about-me-picture">
                 <Slide left>
                   <img
-                    src="https://res.cloudinary.com/john-pels/image/upload/v1583354722/My_image.jpg"
+                    src="https://res.cloudinary.com/john-pels/image/upload/v1587415821/newImage.jpg"
                     alt="pic"
                     className="img-responsive my-image"
                   />
@@ -65,8 +65,8 @@ const Homepage = () => {
                   </p>
                   <p className="about-me-p">
                     I volunteer for tech events, and participate in Hackathons.
-                    I spend my liesure reading, researching and writing articles
-                    for the public.
+                    I spend my leisure reading, researching and writing articles
+                    for the growth of the Tech community.
                   </p>
                   <div className="about-buttons">
                     <a
@@ -94,7 +94,7 @@ const Homepage = () => {
       </section>
       <section className="portfolio pt-5" id="portfolio">
         <div className="container">
-          <h1 className="portfolio-h1  ">What I can Do</h1>
+          <h1 className="portfolio-h1  ">What I Do</h1>
           <div className="border-b "></div>
           <Slide left>
             <div className="row">
@@ -103,10 +103,10 @@ const Homepage = () => {
                   <div className="icon">
                     <FontAwesomeIcon icon={faDesktop} />
                   </div>
-                  <p className="tagline">User Interface</p>
+                  <p className="tagline">Frontend Development</p>
                   <p className="what-i-do--p text-center">
-                    An Interface that is appealing to users and beautiful to
-                    behold using modern tools.
+                    I build awesome client-side applications with the modern
+                    Technologies.
                   </p>
                 </section>
               </div>
@@ -125,12 +125,12 @@ const Homepage = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <section className="what-i-do">
                   <div className="icon">
-                    <FontAwesomeIcon icon={faBriefcase} />
+                    <FontAwesomeIcon icon={faPencilAlt} />
                   </div>
-                  <p className="tagline">User Experience</p>
+                  <p className="tagline">Technical Writing</p>
                   <p className="what-i-do--p text-center">
-                    Products that provide usability, meaningful, empathy and
-                    relevant experiences to users.
+                    I write technical articles to share my knowledge with other
+                    developers and also for the tech community.
                   </p>
                 </section>
               </div>
@@ -141,12 +141,12 @@ const Homepage = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <section className="what-i-do">
                   <div className="icon">
-                    <FontAwesomeIcon icon={faPeopleCarry} />
+                    <FontAwesomeIcon icon={faBriefcase} />
                   </div>
-                  <p className="tagline">Team Work</p>
+                  <p className="tagline">Skill-set</p>
                   <p className="what-i-do--p text-center">
-                    A character that forms a formidable collaboration with team
-                    members to deliver great product.
+                    React.js & Redux, SASS, Git & Github, Firebase, CSS3, Figma,
+                    Adobe Illustrator & Photoshop.
                   </p>
                 </section>
               </div>
@@ -165,12 +165,12 @@ const Homepage = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <section className="what-i-do">
                   <div className="icon">
-                    <FontAwesomeIcon icon={faPencilAlt} />
+                    <FontAwesomeIcon icon={faPeopleCarry} />
                   </div>
-                  <p className="tagline">Creative Design</p>
+                  <p className="tagline">Team Work</p>
                   <p className="what-i-do--p text-center">
-                    Designs that are unique, effective, creating a strong
-                    impression and building consumer trust.
+                    A character that forms a formidable collaboration with team
+                    members to deliver great product.
                   </p>
                 </section>
               </div>
@@ -282,15 +282,8 @@ const Homepage = () => {
                   </p>
                   <div className="project-links">
                     <div className="view-pro">
-                      <a
-                        href="https://github.com/John-pels/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="about-btn-blog"
-                      >
-                        <FontAwesomeIcon icon={faGithub} />
-                        <span className="ml-2">Repository</span>
-                      </a>
+                      <FontAwesomeIcon icon={faGithub} />
+                      <span className="ml-2">Repository</span>
                     </div>
                     <div className="view-repo">
                       <a
