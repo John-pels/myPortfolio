@@ -5,7 +5,8 @@ body, #root {
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
 
-  a{
+
+  a,.icon{
     color: ${({ theme }) => theme.text};
   }
 
@@ -28,15 +29,16 @@ body, #root {
       }
    }
 
-   .about-btn-download,.about-btn-blog, .btn-hire,.btn-work{
+   .about-btn-download,.about-btn-blog, .btn-hire,.btn-work, .btn-contact{
      border: 1px solid ${({ theme }) => theme.text};
 
        &:hover {
         background: ${({ theme }) => theme.text};
-        color: ${({ theme }) => theme.background};
+         color: ${({ theme }) => theme.background};
         
         }  
   }
+
 
   .my-image, .about-me-picture {
     ::before{
@@ -113,20 +115,29 @@ body, #root {
           transition: all 0.5s ease-in-out;
 
           &:hover {
+//   .btn-contact {
+//       color:${({ theme }) => theme.text};
+//     border: 1px solid ${({ theme }) => theme.text};
+      
+//       &:hover {
+//       color:${({ theme }) => theme.text};
+
+//       }
+//   }
             color: #292929;
           }
         }
       }
   }
 
-  .btn-contact {
-      color:${({ theme }) => theme.text};
-    border: 1px solid ${({ theme }) => theme.text};
+//   .btn-contact {
+//       color:${({ theme }) => theme.text};
+//     border: 1px solid ${({ theme }) => theme.text};
       
-      &:hover {
-      color:${({ theme }) => theme.background};
+//       &:hover {
+//       color:${({ theme }) => theme.text};
 
-      }
-  }
+//       }
+//   }
 }
 `;
