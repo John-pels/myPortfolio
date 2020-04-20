@@ -1,4 +1,4 @@
-const dark = "#090833";
+const dark = "#18274D";
 const white = "#FFF";
 
 export const Light = {
