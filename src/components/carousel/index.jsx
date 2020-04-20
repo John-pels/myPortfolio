@@ -47,20 +47,17 @@ const Dot = styled.span`
   cursor: pointer;
   text-shadow: 1px 1px 1px #fff;
   user-select: none;
-  color: #0a0e33;
 `;
 const Dots = styled.span`
   text-align: center;
   width: ${width};
   z-index: 100;
-  color: #0a0e33;
 `;
 
 const TestimonialCard = styled.section`
   display: flex;
   flex-flow: column wrap !important;
   align-items: center;
-  color: #0a0e33;
   padding: 1em;
 
   @media (max-width: 840px) {
