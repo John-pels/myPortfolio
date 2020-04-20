@@ -17,6 +17,7 @@ import {
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.styles.scss";
+import { faGithub, faFirefoxBrowser } from "@fortawesome/free-brands-svg-icons";
 
 const Homepage = () => {
   return (
@@ -186,79 +187,122 @@ const Homepage = () => {
             <div className="row">
               <div className="col-lg-4">
                 <div className="project-col">
-                  <div className="project__wrap">
-                    <h3 className="project__name">Giphy Search Engine</h3>
-                    <div className="border-b "></div>
-                    <div className="project__image">
-                      <img
-                        src="https://res.cloudinary.com/john-pels/image/upload/v1586532828/gif1.png"
-                        alt="img"
-                        className="p-img"
-                      />
+                  <div className="project-img-div">
+                    <img
+                      src="https://res.cloudinary.com/john-pels/image/upload/v1586532828/gif1.png"
+                      alt="projects"
+                      className="pro-image"
+                    />
+                  </div>
+                  <p className="project-brief p-3">
+                    <b>Giphy search Engine</b> is a web app where user enters a
+                    keyword(letter or figure) and gets the related gifs in
+                    return. Technologies used are React, SASS, React-Router and
+                    Giphy API.
+                  </p>
+                  <div className="project-links">
+                    <div className="view-pro">
+                      <a
+                        href="https://github.com/John-pels/gif-seacrh"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="about-btn-blog"
+                      >
+                        <FontAwesomeIcon icon={faGithub} />
+                        <span className="ml-2">Repository</span>
+                      </a>
                     </div>
-                    <p className="project__stack">
-                      React, SASS, CSS3 and Giphy API
-                    </p>
-                    <a
-                      href="https://giph-search.netlify.com/"
-                      className="project__link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Project
-                    </a>
+                    <div className="view-repo">
+                      <a
+                        href="https://giph-search.netlify.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="about-btn-blog"
+                      >
+                        <FontAwesomeIcon icon={faFirefoxBrowser} />
+                        <span className="ml-1">View</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="project-col">
-                  <div className="project__wrap">
-                    <h3 className="project__name">Feeling Pressed</h3>
-                    <div className="border-b "></div>
-                    <div className="project__image">
-                      <img
-                        src="https://res.cloudinary.com/john-pels/image/upload/v1586532833/Screenshot_from_2020-04-10_10-13-05.png"
-                        alt="img"
-                        className="p-img"
-                      />
+                  <div className="project-img-div">
+                    <img
+                      src="https://res.cloudinary.com/john-pels/image/upload/v1586532833/Screenshot_from_2020-04-10_10-13-05.png"
+                      alt="projects"
+                      className="pro-image"
+                    />
+                  </div>
+                  <p className="project-brief p-3">
+                    <b>Feeling Pressed</b> is a web platform people get daily
+                    motivational and illuminating words of God. Technologies
+                    used are React, SASS, React-Router, API, Node and Express.js
+                  </p>
+                  <div className="project-links">
+                    <div className="view-pro">
+                      <a
+                        href="https://github.com/joshtom/feeling-pressed"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="about-btn-blog"
+                      >
+                        <FontAwesomeIcon icon={faGithub} />
+                        <span className="ml-2">Repository</span>
+                      </a>
                     </div>
-                    <p className="project__stack">
-                      JavaScript, React, SASS, Node and Express.js
-                    </p>
-                    <a
-                      href="https://feeling-pressed.netlify.com/"
-                      className="project__link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Project
-                    </a>
+                    <div className="view-repo">
+                      <a
+                        href="https://feeling-pressed.netlify.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="about-btn-blog"
+                      >
+                        <FontAwesomeIcon icon={faFirefoxBrowser} />
+                        <span className="ml-1">View</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="project-col">
-                  <div className="project__wrap">
-                    <h3 className="project__name">ReallyGoodHmo</h3>
-                    <div className="border-b "></div>
-                    <div className="project__image">
-                      <img
-                        src="https://res.cloudinary.com/john-pels/image/upload/v1587106815/reallyGoodHmo.png"
-                        alt="img"
-                        className="p-img"
-                      />
+                  <div className="project-img-div">
+                    <img
+                      src="https://res.cloudinary.com/john-pels/image/upload/v1587106815/reallyGoodHmo.png"
+                      alt="projects"
+                      className="pro-image"
+                    />
+                  </div>
+                  <p className="project-brief p-3">
+                    <b>ReallyGoodHmo</b> is a web application and platform for
+                    health and medical attention and care. Technologies used are
+                    HTML5,CSS3, SASS, jQuery and Vanilla JS.
+                  </p>
+                  <div className="project-links">
+                    <div className="view-pro">
+                      <a
+                        href="https://github.com/John-pels/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="about-btn-blog"
+                      >
+                        <FontAwesomeIcon icon={faGithub} />
+                        <span className="ml-2">Repository</span>
+                      </a>
                     </div>
-                    <p className="project__stack">
-                      HTML5, CSS3, SASS, jQuery and Vanilla JS
-                    </p>
-                    <a
-                      href="http://www.reallygoodhmo.com/"
-                      className="project__link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Project
-                    </a>
+                    <div className="view-repo">
+                      <a
+                        href="http://reallygoodhmo.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="about-btn-blog"
+                      >
+                        <FontAwesomeIcon icon={faFirefoxBrowser} />
+                        <span className="ml-1">View</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
