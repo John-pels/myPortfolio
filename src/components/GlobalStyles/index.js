@@ -5,6 +5,14 @@ body, #root {
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
 
+  .projects{
+    .project-links,a{
+      background: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.background};
+    text-decoration:none
+
+    }
+  }
 
   a,.icon{
     color: ${({ theme }) => theme.text};
@@ -29,7 +37,9 @@ body, #root {
       }
    }
 
-   .about-btn-download,.about-btn-blog, .btn-hire,.btn-work, .btn-contact{
+  
+
+   .about-btn-download,.about-btn-blog, .btn-contact,.btn-hire, .btn-work{
      border: 1px solid ${({ theme }) => theme.text};
 
        &:hover {
