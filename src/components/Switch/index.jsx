@@ -17,7 +17,7 @@ display: block;
 cursor:pointer;
 width:100%;
 height:100%
-background-color: #ccc;
+background-color: #090833;
 border-radius: 34px;
 -webkit-transition: 0.4s;
 transition: 0.4s;
@@ -28,7 +28,7 @@ transition: 0.4s;
     height:26px;
     width:26px;
     margin: 4px;
-    background-color:white;
+    background-color:#F24484;
     border-radius: 50%;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -42,7 +42,7 @@ const Input = styled.input`
   margin: 0;
 
   &:checked + ${Slider} {
-    background-color: #2196f3;
+    background-color: #fff;
   }
 
   &:checked + ${Slider}::before {
