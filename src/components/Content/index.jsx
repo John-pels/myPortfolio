@@ -9,7 +9,11 @@ const Styles = {
 const Content = () => {
   const { state } = useContext(Context);
 
-  return <h2 styles={Styles}>{`${state.isDark ? "Light" : "Dark"} mode `}</h2>;
+  return (
+    <span styles={Styles} className="mr-2">{`${
+      state.isDark ? "Light" : "Dark"
+    } mode `}</span>
+  );
 };
 
 export default Content;
