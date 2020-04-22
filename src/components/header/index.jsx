@@ -44,7 +44,7 @@ const Header = ({ about, blog, contact, portfolio, testimonial, project }) => (
     />
     <div className="container">
       <nav className="nav">
-        <div className="nav__items brand">John</div>
+        <div className="nav__items brand">{"<John/>"}</div>
         <div className="nav__items list">
           <ul>
             <li>
