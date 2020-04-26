@@ -134,7 +134,7 @@ export const CarouselSlider = () => {
           </TestifierImg>
           <TestifierName>Akintunde Sultan</TestifierName>
           <TestifierMsg>
-            John is a very fast leaner, he has achieved in few months what
+            John is a very fast learner, he has achieved in few months what
             others would in 2 years. His consistency is amazing and how we was
             able to keep growing his skill while still being a part of a
             startup’s core team is wonderful. He’s great with leading and
